@@ -18,8 +18,19 @@ $brand-danger:          #d9534f !default;
 $body-bg:               #fff !default;
 $text-color:            $gray-dark !default;
 
+
+$brand-elements-color: #ffe600; // small detail, icons, links, buttons etc. 
+$brand-color: #131316; // text or bg wish opacity 
+$brand-inverse-color: #fff;
+$brand-dark-color: #707070; // content
+$brand-darker-color: #515151; // small headings 
+$brand-gray-base: $gray-base; //large headings
+$brand-light-color: #dfe4e5; // hr , border  
+$brand-lighter-color: #fbfbfb; // bg 
+
+
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $brand-elements-color !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
