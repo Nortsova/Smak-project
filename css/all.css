@@ -1570,6 +1570,7 @@ address {
 }
 
 .navigation--inverse .navigation__list__element__link:hover {
+  text-decoration: none;
   color: #ffe600;
 }
 
@@ -1578,6 +1579,23 @@ address {
   width: 1em;
   height: 1em;
   fill: currentColor;
+}
+
+.social {
+  margin-bottom: 30px;
+}
+
+.social__list__item {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.social__list__item__link {
+  color: #fff;
+}
+
+.social__list__item__link:hover {
+  color: #ffe600;
 }
 
 /*# sourceMappingURL=all.css.map */

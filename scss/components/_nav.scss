@@ -24,7 +24,7 @@
             }
             &__link:hover {
                 text-decoration: none;
-                color: $brand-elements-color;
+               	color: $link-color;
             }
         }
     }
@@ -33,7 +33,8 @@
             color: $brand-darker-color;
         }
         .navigation__list__element__link:hover{
-        	color: $brand-elements-color;  
+        	  text-decoration: none;
+        	  color: $link-color ;
         }
     }
 }
