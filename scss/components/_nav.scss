@@ -1,0 +1,40 @@
+.navigation {
+    &__list {
+        @include ul-reset();
+        &__element {
+            display: inline-block;
+            padding: 0 26px;
+            position: relative;
+            &:after {
+                content: '';
+                width: 5px;
+                height: 5px;
+                margin-top: -3px;
+                background: $brand-elements-color;
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+            &:first-child:after {
+                display: none;
+            }
+            &__link {
+                color: $brand-inverse-color;
+                font-weight: bold;
+            }
+            &__link:hover {
+                text-decoration: none;
+               	color: $link-color;
+            }
+        }
+    }
+    &--inverse {
+        .navigation__list__element__link {
+            color: $brand-darker-color;
+        }
+        .navigation__list__element__link:hover{
+        	  text-decoration: none;
+        	  color: $link-color ;
+        }
+    }
+}

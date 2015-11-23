@@ -1,0 +1,17 @@
+.social{
+	margin-bottom: 30px;
+	&__list{
+
+		&__item{
+			display: inline-block;
+			padding: 0 10px;
+			&__link{
+				color: $brand-inverse-color;
+				font-size: 18px;
+			}
+			&__link:hover{
+				color: $link-color ;
+			}
+		}
+	}
+}
