@@ -28,6 +28,32 @@ $brand-gray-base: $gray-base; //large headings
 $brand-light-color: #dfe4e5; // hr , border  
 $brand-lighter-color: #fbfbfb; // bg 
 
+//** Button parameters & colors
+
+$button-padding-vertical:     	20px;
+$button-padding-horizontal:   	52px;
+$button-bg-color:     			$brand-elements-color;
+$button-variant-1-color: 		$brand-color;
+$button-variant-2-color: 		$brand-inverse-color;
+
+//**Tab parameters & colors
+
+$nav-tabs-border-color:                     	#24b5e1 !default;
+$nav-tabs-bg:									#11343a;
+$nav-tabs-link-color:							#000;
+
+$nav-tabs-link-hover-border-color:          	$gray-lighter !default;
+$nav-tabs-active-link-hover-bg:             	#24b5e1;
+$nav-tabs-active-link-hover-color:          	#fff;
+$nav-tabs-active-link-hover-border-color:   	#ddd !default;
+
+$nav-tabs-justified-link-border-color:			#ddd !default;
+$nav-tabs-justified-active-link-border-color:	$body-bg !default;
+
+$border-radius-base:        					3px !default;
+$cursor-disabled:                				not-allowed !default;
+$nav-link-padding:                          	10px 15px !default;
+$nav-link-hover-bg:                         	$gray-lighter !default;
 
 //** Global textual link color.
 $link-color:            $brand-elements-color !default;

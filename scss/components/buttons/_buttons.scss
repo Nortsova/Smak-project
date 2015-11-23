@@ -1,0 +1,22 @@
+.button {
+    padding: $button-padding-vertical $button-padding-horizontal; 
+    border: medium none;
+    border-spacing: 0; 
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-indent: 0;
+    outline: none;
+    cursor: pointer;
+	&__variant-1 {
+		text-transform: uppercase;
+		@include button-variant($button-variant-1-color, $button-bg-color);
+	}
+	&__variant-2 {
+		@include button-variant($button-variant-2-color, $button-bg-color);
+	}
+	&__variant-3 {
+		@extend .button__variant-2; 
+		text-transform: uppercase;
+	}
+}
