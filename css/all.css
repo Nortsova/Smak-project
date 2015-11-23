@@ -1480,7 +1480,6 @@ address {
   line-height: 1.42857;
 }
 
-<<<<<<< HEAD
 .button {
   padding: 20px 52px;
   border: medium none;
@@ -1562,7 +1561,8 @@ address {
 
 .team-member__name, .team-member__title {
   display: block;
-=======
+}
+
 .block {
   padding: 30px 0;
 }
@@ -1842,7 +1842,6 @@ h5.reviews:before {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
->>>>>>> 22ddb367e2ebd14cd3002f0dfe41ad4e9e8a04d0
 }
 
 /*# sourceMappingURL=all.css.map */
