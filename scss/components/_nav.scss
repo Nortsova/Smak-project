@@ -21,20 +21,20 @@
             &__link {
                 color: $brand-inverse-color;
                 font-weight: bold;
-            }
-            &__link:hover {
-                text-decoration: none;
-               	color: $link-color;
+                &:hover, &:focus, &--active {
+                    text-decoration: none;
+                   	color: $link-color;
+                }
             }
         }
     }
     &--inverse {
         .navigation__list__element__link {
             color: $brand-darker-color;
-        }
-        .navigation__list__element__link:hover{
+            &:hover, &:focus, &--active{
         	  text-decoration: none;
         	  color: $link-color ;
+            }
         }
     }
 }

@@ -1,31 +1,61 @@
 .tabs {
-    margin-bottom: 0;
-    padding: 0;
-    padding-bottom: 1px;
-    list-style: none;
-    @include clearfix;
-    li {
-    position: relative;
-    display: block;
-    float: left;
-    cursor: pointer;
-    }
-  }
+  margin-bottom: 0;
+  padding: 0;
+  padding-bottom: 1px;
+  list-style: none;
+  position: relative;
+  @include clearfix;
+}
+
 .tab-content {
-  > .tab-pane {
+  padding: 50px;
+  background: $brand-color;
+  color: #fff;
+  .tab-pane {
     display: none;
   }
-  > .active {
+  .active {
     display: block;
   }
 }
+
 .team-member {
+  display: block;
   text-align: center;
+  @include clearfix;
   &__name {
-    display: block;
+    display: block; 
+    color: $brand-elements-color;
   }
   &__title {
-    @extend .team-member__name;
+    color: $text-color;
+    margin-bottom: 50px;
   }
+  &__triangle {
+    margin-bottom: -7px;
+    display: none; 
+    border: 25px solid transparent;
+    border-bottom: 20px solid black;
+    }
+  &:focus .team-member__triangle {
+    display: inline-block;
+  } 
+}
 
+.image-thumb {
+  background: #292f34;
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__caption {
+    padding: 20px 0;
+    display: block;
+    background: $brand-inverse-color;
+  }
 }

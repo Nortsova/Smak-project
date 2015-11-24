@@ -1,0 +1,28 @@
+.overlay {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba($brand-elements-color, .8);
+	color: $brand-inverse-color;
+	display: table;
+	width: 100%;
+	height: 100%;
+	transform: translateY(-100%);
+	&__text-holder {
+	display: table-cell;
+	vertical-align: middle;
+	transition: transform 0.7s cubic-bezier(0.1, 0.9, 0.9, 1);
+	}
+	&__text {
+		display: block;
+	}
+}
+.GITheWall ul li:hover {
+	.overlay {
+		transform: translateY(0);
+	transition: transform 0.7s cubic-bezier(0.1, 0.9, 0.9, 1);
+	}
+}
