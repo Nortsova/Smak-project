@@ -2109,4 +2109,12 @@ margin: 0 auto;
   font-weight: bold;
 }
 
+.diagramm .demo-1 > div {
+  margin: 0 auto;
+}
+
+.diagramm h3 {
+  text-align: center;
+}
+
 /*# sourceMappingURL=all.css.map */
