@@ -35,13 +35,12 @@
     margin-bottom: -7px;
     display: none; 
     border: 25px solid transparent;
-    border-bottom: 20px solid black;
+    border-bottom: 20px solid $brand-color;
     }
   &:focus .team-member__triangle {
     display: inline-block;
   } 
 }
-
 .image-thumb {
   background: #292f34;
   display: block;
