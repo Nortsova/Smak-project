@@ -1594,6 +1594,7 @@ address {
 .image-thumb {
   background: #292f34;
   display: block;
+<<<<<<< HEAD
   padding-bottom: 100%;
   position: relative;
 }
@@ -1609,6 +1610,8 @@ address {
   padding: 20px 0;
   display: block;
   background: #fff;
+=======
+>>>>>>> 328677cd7db7b07d064ee0f358376e735d20ef71
 }
 
 .block {

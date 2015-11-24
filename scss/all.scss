@@ -1,23 +1,24 @@
-
-
 @import "variables";
 @import "mixins";
 
-// global 
 @import "components/normalize";
 @import "components/scaffolding";
 @import "components/grid";
 @import "components/type";
 
+<<<<<<< HEAD
 // elements
 @import "components/buttons/buttons";
 @import "components/tab/tab-js";
 
 @import "components/layout";
+=======
+@import "components/buttons/buttons";
+@import "components/tab/tab-js";
+>>>>>>> 328677cd7db7b07d064ee0f358376e735d20ef71
 
-// content
+@import "components/layout";
 
-// header 
 @import "components/nav";
 @import "components/icon";
 @import "components/social-list";  
