@@ -20,6 +20,9 @@
 		color: $brand-inverse-color;
 		background-color: $brand-color;
 	}
+	&--tab-content {
+		@extend .block--footer;
+	}
 }
 .bottom-border {
 	position: relative;

@@ -1,0 +1,141 @@
+<div class="row">
+                <ul id="tab" class="tabs" role="tablist">
+                    <li role="presentation" class="col-md-3">
+                        <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab" class="team-member">
+                            <div class="image-thumb">
+                                <img src="#" alt="" class="img-responsive">
+                            </div>
+                            <div class="image-thumb__caption">
+                                <span class="team-member__name">JOHN DOE</span>
+                                <span class="team-member__title">CREATIVE DIRECTOR</span>
+                            </div>
+                            <span class="team-member__triangle"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-md-3">
+                        <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab" class="team-member">
+                            <div class="image-thumb">
+                                <img src="#" alt="" class="img-responsive">
+                            </div>
+                            <div class="image-thumb__caption">
+                                <span class="team-member__name">JOHN DOE</span>
+                                <span class="team-member__title">ART DIRECTOR</span>
+                            </div>
+                            <span class="team-member__triangle"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-md-3">
+                        <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab" class="team-member">
+                            <div class="image-thumb">
+                                <img src="#" alt="" class="img-responsive">
+                            </div>
+                            <div class="image-thumb__caption">
+                                <span class="team-member__name">JOHN DOE</span>
+                                <span class="team-member__title">WEB DEVELOPER</span>
+                            </div>
+                            <span class="team-member__triangle"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-md-3">
+                        <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab" class="team-member">
+                            <div class="image-thumb">
+                                <img src="#" alt="" class="img-responsive">
+                            </div>
+                            <div class="image-thumb__caption">
+                                <span class="team-member__name">JOHN DOE</span>
+                                <span class="team-member__title">WEB DEVELOPER</span>
+                            </div>
+                            <span class="team-member__triangle"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div class="block block--tab-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane" id="tab1">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id 
+                dui posuere blandit. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus 
+                convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt ni 
+                dictum porta.</div>
+                                <div role="tabpanel" class="tab-pane" id="tab2">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id 
+                dui posuere blandit. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus 
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab3">
+                dui posuere blandit. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus 
+                convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt ni 
+                dictum porta.</div>
+                                <div role="tabpanel" class="tab-pane" id="tab4">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id 
+                dui posuere blandit. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus 
+                convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+.tabs {
+  margin-bottom: 0;
+  padding: 0;
+  padding-bottom: 1px;
+  list-style: none;
+  position: relative;
+  @include clearfix;
+}
+
+.tab-content {
+  padding: 50px;
+  background: $brand-color;
+  color: #fff;
+  .tab-pane {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+}
+
+.team-member {
+  display: block;
+  text-align: center;
+  @include clearfix;
+  &__name {
+    display: block; 
+    color: $brand-elements-color;
+  }
+  &__title {
+    color: $text-color;
+    margin-bottom: 50px;
+  }
+  &__triangle {
+    margin-bottom: -7px;
+    display: none; 
+    border: 25px solid transparent;
+    border-bottom: 20px solid black;
+    }
+  &:focus .team-member__triangle {
+    display: inline-block;
+  } 
+}
+
+.image-thumb {
+  background: #292f34;
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__caption {
+    padding: 20px 0;
+    display: block;
+    background: $brand-inverse-color;
+  }

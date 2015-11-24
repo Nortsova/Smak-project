@@ -1480,7 +1480,6 @@ address {
   line-height: 1.42857;
 }
 
-<<<<<<< HEAD
 .button {
   padding: 20px 52px;
   border: medium none;
@@ -1529,6 +1528,7 @@ address {
   padding: 0;
   padding-bottom: 1px;
   list-style: none;
+  position: relative;
 }
 
 .tabs:before,
@@ -1541,28 +1541,76 @@ address {
   clear: both;
 }
 
-.tabs li {
-  position: relative;
-  display: block;
-  float: left;
-  cursor: pointer;
+.tab-content {
+  padding: 50px;
+  background: #131316;
+  color: #fff;
 }
 
-.tab-content > .tab-pane {
+.tab-content .tab-pane {
   display: none;
 }
 
-.tab-content > .active {
+.tab-content .active {
   display: block;
 }
 
 .team-member {
+  display: block;
   text-align: center;
 }
 
-.team-member__name, .team-member__title {
+.team-member:before,
+.team-member:after {
+  content: " ";
+  display: table;
+}
+
+.team-member:after {
+  clear: both;
+}
+
+.team-member__name {
   display: block;
-=======
+  color: #ffe600;
+}
+
+.team-member__title {
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+.team-member__triangle {
+  margin-bottom: -7px;
+  display: none;
+  border: 25px solid transparent;
+  border-bottom: 20px solid black;
+}
+
+.team-member:focus .team-member__triangle {
+  display: inline-block;
+}
+
+.image-thumb {
+  background: #292f34;
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.image-thumb img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-thumb__caption {
+  padding: 20px 0;
+  display: block;
+  background: #fff;
+}
+
 .block {
   padding: 30px 0;
 }
@@ -1585,7 +1633,7 @@ address {
   background-color: #fbfbfb;
 }
 
-.block--footer {
+.block--footer, .block--tab-content {
   color: #fff;
   background-color: #131316;
 }
@@ -1842,7 +1890,6 @@ h5.reviews:before {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
->>>>>>> 22ddb367e2ebd14cd3002f0dfe41ad4e9e8a04d0
 }
 
 /*# sourceMappingURL=all.css.map */
