@@ -7,13 +7,13 @@
 		//Set the default values, use comma to separate the settings, example:
 			var defaults = {
 			        animate : true,
-					diameter : 100,
+					diameter : 145,
 					guage: 5,
 					coverBg: '#131a1d',
 					bgColor: '#fff',
 					fillColor: '#ffe600',
 					percentSize: '30px',
-					percentWeight: 'normal'
+					percentWeight: 'lighter'
 				},
 				styles = {
 				    cirContainer : {

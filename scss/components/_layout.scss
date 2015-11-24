@@ -1,7 +1,11 @@
 .holder{
 }
 .block {
+	position: relative;
 	padding: 30px 0;
+	&--no-padding{
+		padding: 0; 
+	}
 	&--height {
 		height: 100vh;
 	}
@@ -24,6 +28,17 @@
 		@extend .block--footer;
 	}
 }
+/* for exmple */ 
+/* *********************** */
+.valign{ 
+	margin-top: 15%;
+	
+}
+/* *********************** */
+
+
+
+
 .bottom-border {
 	position: relative;
 	display: inline-block;
@@ -41,4 +56,19 @@
 }
 .gold {
 	color: $brand-elements-color;
+}
+.container-wrapper{
+	width: 100%;
+	background: #2a262a;
+	&--navbar{
+		padding: 15px 0;
+	} 
+}
+.btn--down,.btn--up{ 
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	.btn {
+		margin-left: -50%;
+	}
 }
