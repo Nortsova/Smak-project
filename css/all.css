@@ -2071,4 +2071,42 @@ h5.reviews:before {
   -ms-transform: translate3d(0, 0, 0);
 }
 
+.squere-counter {
+  margin: 0 0 60px 0;
+  font-size: 16px;
+  color: #ffe600;
+  text-align: center;
+  /*     &__element--circle{
+	border-radius: 100%;
+	padding: 0;
+	margin: 0;
+	
+vertical-align: middle;
+width: 100%;
+height: 150px;
+margin: 0 auto; 
+
+
+	
+	
+	
+} */
+}
+
+.squere-counter__element {
+  text-align: center;
+  padding: 35px 0;
+  display: inline-block;
+  border: 1px solid #ffe600;
+  width: 100%;
+}
+
+.squere-counter__element__counter {
+  font-size: 40px;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=all.css.map */
