@@ -1,6 +1,29 @@
 .holder {}
 
 .block {
+	padding: 30px 0;
+	&--height {
+		height: 100vh;
+		min-height: 550px;
+	}
+	&--dark {
+		background-color: $brand-bg-color;
+		color: $brand-inverse-color;
+	}
+	&--darken {
+		background-color: $brand-darken-bg-color;
+		color: $brand-inverse-color;
+	}
+	&--light {
+		background-color: $brand-lighter-color;
+	}
+	&--footer {
+		color: $brand-inverse-color;
+		background-color: $brand-color;
+	}
+	&--tab-content {
+		@extend .block--footer;
+	}
     position: relative;
     padding: 30px 0;
     &--no-padding {

@@ -2,10 +2,14 @@
   color: $color;
   background-color: $background;
   text-decoration: none;
+  &:hover {
+  	background-image: none;
+    background-color: darken($button-bg-color, 5%);
+  }
   &:active {
-        outline: 0;
-        background-image: none;
-        background-color: darken($button-bg-color, 5%);
-        box-shadow: inset 0 5px 8px rgba(0,0,0,.125)
-      }
+    outline: 0;
+    background-image: none;
+    background-color: darken($button-bg-color, 8%);
+    box-shadow: inset -3px 5px 8px rgba(0,0,0,.2)
+     }
 }

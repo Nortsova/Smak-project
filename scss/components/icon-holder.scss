@@ -1,0 +1,22 @@
+.icon-holder {
+	display: inline-block;
+	text-align: center;
+	&--svg {
+		position: relative;
+		display: inline-block;
+		width: 120px;
+		height: 120px;
+		background: yellow;
+		border-radius: 100%;
+	}
+}
+
+
+.icon {
+	position: absolute;
+	top: 33%;
+	left: 33%;
+	width: 40px;
+	height: 40px;
+	fill: currentColor;
+}

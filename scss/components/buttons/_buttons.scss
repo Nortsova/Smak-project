@@ -8,6 +8,11 @@
     text-indent: 0;
     outline: none;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    &:hover, &:focus {
+    	text-decoration: none;
+    }
 	&__variant-1 {
 		text-transform: uppercase;
 		@include button-variant($button-variant-1-color, $button-bg-color);

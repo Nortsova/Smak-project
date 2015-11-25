@@ -4,7 +4,7 @@
 @import "components/normalize";
 @import "components/scaffolding";
 @import "components/grid";
-@import "components/type";
+@import "components/type"; 
 
 
 // elements
@@ -18,6 +18,9 @@
 
 
 @import "components/layout";
+@import "components/overlay";
+
+@import "components/wall";
 
 @import "components/nav";
 @import "components/icon";
@@ -26,3 +29,6 @@
 @import "components/counter";
 @import "components/diagramm";
 @import "components/form";
+@import "components/icon-holder";
+
+
