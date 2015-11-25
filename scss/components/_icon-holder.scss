@@ -1,0 +1,47 @@
+.icon-row {
+    text-align: center;
+    margin: 100px 0 60px;
+    p{
+    	font-size: 	12px;
+    }
+}
+
+.icon-holder {
+    &--svg {
+    
+    }
+        &__link {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            border: 1px solid $brand-elements-color;
+            background: $brand-elements-color;
+            color: $brand-inverse-color;
+            font-size: 40px;
+            display: block;
+            border-radius: 100%;
+          
+            &__image{
+				line-height: 100%;
+            	vertical-align: middle;
+            	height: 100%;
+            }
+            &--without-bg{
+            	background: none;
+            	border: none;
+            	color: $brand-elements-color;
+            	height: 70px;
+            }
+            &--without-bg:hover{
+            		background: none;
+            	border: none;
+            	color: $brand-elements-color;
+            }
+        }
+        &__link:hover{
+        	background: none;
+        	border-color: #000;
+        	color: $brand-elements-color;
+        }
+}
+   
