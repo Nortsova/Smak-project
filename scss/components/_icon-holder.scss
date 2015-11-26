@@ -7,41 +7,39 @@
 }
 
 .icon-holder {
-    &--svg {
-    
+    &__link {
+    width: 120px;
+    height: 120px;
+    border: 1px solid $brand-elements-color;
+    background: $brand-elements-color;
+    color: $brand-inverse-color;
+    font-size: 40px;
+    display: block;
+    border-radius: 100%;
+    text-align: center;
+    &:hover {
+    background: none;
+    border-color: #000;
+    color: $brand-elements-color;
     }
-        &__link {
-            width: 120px;
-            height: 120px;
+        &--center {
             margin: 0 auto;
-            border: 1px solid $brand-elements-color;
-            background: $brand-elements-color;
-            color: $brand-inverse-color;
-            font-size: 40px;
-            display: block;
-            border-radius: 100%;
-          
-            &__image{
-				line-height: 100%;
-            	vertical-align: middle;
-            	height: 100%;
-            }
-            &--without-bg{
-            	background: none;
-            	border: none;
-            	color: $brand-elements-color;
-            	height: 70px;
-            }
-            &--without-bg:hover{
-            		background: none;
-            	border: none;
-            	color: $brand-elements-color;
-            }
         }
-        &__link:hover{
-        	background: none;
-        	border-color: #000;
-        	color: $brand-elements-color;
+        &--small {
+            width: 70px;
+            height: 70px;
+            font-size: 30px;
+            margin-top: 22px;
         }
+        &--without-bg {
+            background: none;
+            border: none;
+            color: $brand-elements-color;
+        }
+        &__image {
+		line-height: 100%;
+    	height: 100%;
+        }
+    }            
 }
-   
+
